@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;/*Espacio alrededor del borde de un elemento*/
+    padding: 0; /*Espacio entre el contenido y el borde del elemento*/
+    font-size: 15px;/*Tamaño de la fuente*/
+    box-sizing: border-box; /*Tamaño de caja se va a mantener estable*/
+}
+
+
+
+
+
+
+/*------------Footer----------*/
+.attribution{
+     font-size: 11px; text-align: center; }
+.attribution a{ 
+     color: hsl(228, 45%, 44%); }
