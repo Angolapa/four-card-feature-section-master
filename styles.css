@@ -16,15 +16,99 @@ body{
     padding: 0; /*Espacio entre el contenido y el borde del elemento*/
     font-size: 15px;/*Tamaño de la fuente*/
     box-sizing: border-box; /*Tamaño de caja se va a mantener estable*/
+    color: var(--veryDarkBlue);/*Color de la letra*/
+    background-color: var(--veryLightGray);/*Color de fondo*/
+}
+.container{
+    margin: 90px 30px;/*Superior e Inferior*/
 }
 
+/*----------Header----------*/
+header{
+    text-align: center;/*Alinear texto al centro*/
+}
+header h1{
+    font-weight: 200;/*Ancho de la fuente*/
+    font-size: 1.6em; /*Tamaño de la fuente*/
+    margin: 0; /*Eliminar margenes*/
+}
+header h2{
+    font-weight: 600;/*Ancho de la fuente*/
+    font-size: 1.6em; /*Tamaño de la fuente*/
+    margin: 0; /*Eliminar margenes*/
+}
+header p{
+    font-size: 1.05em; /*Tamaño de la fuente*/
+    color: var(--grayishBlue); /*Color de la letra*/
+    margin-bottom: 70px;/*Margen inferior*/
+}
 
+/*----------cardsContainers-------------*/
+.cardsContainer{
+    max-width: 500px; /*Ancho maximo*/
+    margin: 0 auto; /*Margen superior e inferior 0 a los lados auto*/
 
+}
+.card{
+    background-color: var(--veryLightGray); /*Color de fondo*/
+    border-radius: 8px; /*Redondear esquinas*/
+    box-shadow:3px 10px 10px var(--grayishBlue);/*Sombra*/
+    margin-bottom: 30px; /*Margen entre tarjetas*/
+    min-width: 310px; /*Mínimo tamaño que un elemento puede tener*/
+    max-width: 500px; /*Maximo tamaño que un elemento puede tener*/
+    height: 222px; /*Altura*/
+    overflow: hidden;/*Cualquier elemento que sobre salga se esconda*/
+}
 
+.card1 .line{
+    background-color: var(--Cyan);
+    height: 4px;/*Altura*/
+}
+.card2 .line{
+    background-color: var(--Red);
+    height: 4px;/*Altura*/
+}
+.card3 .line{
+    background-color: var(--Orange);
+    height: 4px;/*Altura*/
+}
+.card4 .line{
+    background-color: var(--Blue);
+    height: 4px;/*Altura*/
+}
 
+.content{
+    padding: 30px; /*Espacio entre el contenido y el borde del elemento*/
+}
+.content h3{
+    margin-top: 0; /*Eliminar margen superior*/
+}
+.content p{
+    color: var(--grayishBlue);
+    font-size: 0.89em; /*Tamaño de la letra*/
+    margin: -15px 0 30px; /*Superior, a los lados, inferior, a los lados*/
+}
+.image{
+    text-align: right; /*Alinear texto a la derecha*/
+}
 
 /*------------Footer----------*/
 .attribution{
      font-size: 11px; text-align: center; }
 .attribution a{ 
      color: hsl(228, 45%, 44%); }
+
+/*----------------Responsive---------*/
+
+@media only screen and (min-width: 600px){
+    header{
+        max-width: 525px; /*Maximo tamaño que un elemento puede tener*/
+        margin: 0 auto; /*Margen superior e inferior 0 a los lados auto*/
+    }
+    header h1{
+        font-size: 2.5em; /*Tamaño de la fuente*/
+    }
+    header h2{
+        font-size: 2.5em; /*Tamaño de la fuente*/
+    }
+}
